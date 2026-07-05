@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #111111;
+  background: #f8f6f0;
+  font-synthesis: none;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: #f8f6f0;
+  font-family: Inter, sans-serif;
+}
+
+::selection {
+  background: rgba(116, 128, 91, 0.24);
+}
+
+.archive-link {
+  position: relative;
+}
+
+.archive-link::after {
+  position: absolute;
+  right: 0;
+  bottom: -0.35rem;
+  left: 0;
+  height: 1px;
+  content: '';
+  background: #74805b;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+}
+
+.archive-link:hover::after,
+.archive-link.active::after {
+  transform: scaleX(1);
+}
+
+.typewriter-text {
+  display: inline-flex;
+  min-height: 1.75rem;
+  align-items: center;
+}
+
+.typewriter-text::after {
+  width: 1px;
+  height: 1.15em;
+  margin-left: 0.16rem;
+  content: '';
+  background: #74805b;
+  animation: caret-blink 900ms step-end infinite;
+}
+
+@keyframes caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.report-body {
+  color: #282522;
+  font-size: 1.0625rem;
+  line-height: 1.85;
+}
+
+.report-body h2,
+.report-body h3 {
+  margin-top: 2.4rem;
+  margin-bottom: 0.8rem;
+  color: #111111;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.report-body h2 {
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+}
+
+.report-body h3 {
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+}
+
+.report-body p {
+  margin: 1.1rem 0;
+}
+
+.report-body ul,
+.report-body ol {
+  margin: 1.1rem 0;
+  padding-left: 1.35rem;
+}
+
+.report-body li {
+  margin: 0.55rem 0;
+}
+
+.report-body strong {
+  color: #111111;
+  font-weight: 700;
+}
+
+.report-body blockquote {
+  margin: 1.6rem 0;
+  border-left: 2px solid #74805b;
+  padding-left: 1.25rem;
+  color: #4e4941;
+  font-size: 1.35rem;
+  line-height: 1.45;
+}
+
+.report-body code {
+  border: 1px solid #ded8cb;
+  border-radius: 0.35rem;
+  padding: 0.12rem 0.32rem;
+  background: rgba(255, 255, 255, 0.55);
+  color: #111111;
+  font-size: 0.95em;
+}
