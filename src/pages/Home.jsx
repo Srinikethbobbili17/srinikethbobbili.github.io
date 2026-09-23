@@ -22,6 +22,9 @@ export default function Home() {
         <div className="mt-10 flex flex-col items-start gap-3">
           <ArchiveButton to="/projects" variant="secondary">My Projects {'->'}</ArchiveButton>
           <ArchiveButton to="/books" variant="secondary">Books {'->'}</ArchiveButton>
+          <ArchiveButton to="/learnings" variant="secondary">
+            Learnings from Underground {'->'}
+          </ArchiveButton>
         </div>
       </section>
     </PageShell>

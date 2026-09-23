@@ -4,6 +4,7 @@ const links = [
   { to: '/', label: 'Home' },
   { to: '/projects', label: 'My Projects' },
   { to: '/books', label: 'Books' },
+  { to: '/learnings', label: 'Learnings from Underground' },
 ];
 
 export default function ArchiveLayout({ children }) {
