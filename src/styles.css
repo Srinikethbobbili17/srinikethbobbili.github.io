@@ -136,3 +136,24 @@ body {
   color: #111111;
   font-size: 0.95em;
 }
+
+.report-body pre {
+  margin: 1.4rem 0;
+  overflow-x: auto;
+  border: 1px solid #ded8cb;
+  border-radius: 0.5rem;
+  padding: 1rem 1.15rem;
+  background: #201f1c;
+  color: #f8f6f0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.report-body pre code {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+}
