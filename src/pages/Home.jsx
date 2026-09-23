@@ -19,8 +19,9 @@ export default function Home() {
           simple: to become a thoughtful engineer who creates reliable, meaningful
           technology while never losing the curiosity that inspired me to start.
         </p>
-        <div className="mt-10">
+        <div className="mt-10 flex flex-col items-start gap-3">
           <ArchiveButton to="/projects" variant="secondary">My Projects {'->'}</ArchiveButton>
+          <ArchiveButton to="/books" variant="secondary">Books {'->'}</ArchiveButton>
         </div>
       </section>
     </PageShell>

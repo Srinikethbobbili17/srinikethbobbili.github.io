@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 const links = [
   { to: '/', label: 'Home' },
   { to: '/projects', label: 'My Projects' },
+  { to: '/books', label: 'Books' },
 ];
 
 export default function ArchiveLayout({ children }) {
