@@ -52,8 +52,8 @@ export default function ArchiveLayout({ children }) {
             >
               Github
             </a>
-            <a className="transition hover:text-archive-ink" href="tel:+918688209148">
-              phone:+91 8688209148
+            <a className="transition hover:text-archive-ink" href="tel:+447405156667">
+              phone:+44 7405156667
             </a>
           </div>
         </div>
